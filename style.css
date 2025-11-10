@@ -204,3 +204,130 @@ nav {
     padding: 12px 4px 10px 4px;
   }
 }
+.tech-ecosystem {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 0 8px 10px 8px;
+  background: #f7f7f7;
+}
+
+.tech-ecosystem h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.35em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.green { color: #1FA366; }
+.brown { color: #ab8750; }
+
+.tech-desc {
+  color: #36393d;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 22px;
+}
+
+.tech-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  background: #eeeeee;
+  border: none;
+  border-radius: 22px;
+  color: #333;
+  padding: 8px 18px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.16s;
+  outline: none;
+}
+
+.filter-btn.active {
+  background: linear-gradient(90deg, #1fa366 60%, #ab8750 100%);
+  color: #fff;
+}
+
+.tech-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 18px 15px 19px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-icon {
+  font-size: 1.9em;
+  margin-right: 12px;
+}
+
+.card-title {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #26343a;
+}
+
+.card-desc {
+  margin-bottom: 12px;
+  color: #36393d;
+  font-size: 0.97em;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 9px;
+}
+.card-tag {
+  background: #e1edeb;
+  color: #197c61;
+  font-size: 0.95em;
+  border-radius: 8px;
+  padding: 5px 11px;
+}
+
+.card-link {
+  color: #1fa366;
+  font-weight: 500;
+  font-size: 0.99em;
+  text-decoration: none;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width:400px) {
+  .tech-ecosystem {
+    max-width: 98vw;
+    padding: 0 2vw 10px 2vw;
+  }
+  .tech-card {
+    padding: 10px 6px 13px 6px;
+  }
+}
